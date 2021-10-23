@@ -1,4 +1,4 @@
-#include"club.h"
+#include"studentclub.h"
 #include"student.h"
 #include<iostream>
 
@@ -23,7 +23,10 @@ int main(){
             if(n.get_name()!="Q") m.push_back(&n);
     }while(n.get_name()!="Q");
 
+    //Declare a new club with the student members above.
     StudentClub club(&p,&v,&s,&t,m);
+
+    //Adding 4 default position to the member number.
     club.add_member(&p);
     club.add_member(&v);
     club.add_member(&s);
