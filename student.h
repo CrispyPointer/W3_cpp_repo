@@ -2,6 +2,7 @@
 #define STUDENT_H
 #include<string>
 
+//Declare a student class
 class Student{
     public:
                     Student();
@@ -9,7 +10,7 @@ class Student{
                     std::string get_name(){return name;}
                     void set_name();
     protected:
-                    std::string name;
+                    std::string name; //This should be declare as a protected variable :D
 };
 
 #endif
